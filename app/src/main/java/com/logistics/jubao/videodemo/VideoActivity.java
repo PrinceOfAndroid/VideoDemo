@@ -53,15 +53,9 @@ public class VideoActivity extends AppCompatActivity {
         videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
             @Override
             public boolean onError(MediaPlayer mp, int what, int extra) {
-//                if (count > MAX_ERROW_COUNT) {
                 Toast.makeText(VideoActivity.this, "视频获取失败，请尝试其他视频", Toast.LENGTH_SHORT).show();
                 videoView.stopPlayback();
                 finish();
-//                } else {
-//                    videoView.stopPlayback();
-//                    videoView.setVideoURI(Uri.parse(videoBean.getVideoPath()));
-//                }
-//                count++;
                 return false;
             }
         });
