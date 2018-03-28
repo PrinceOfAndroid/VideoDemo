@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.logistics.jubao.vitamio">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/vitamio_library_app_name"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>
